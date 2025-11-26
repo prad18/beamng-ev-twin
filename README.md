@@ -15,3 +15,4 @@ This is a minimal scaffold to run a hybrid battery aging twin connected to BeamN
 4) Run the client: `python beamng_client/stream.py`
 
 See the PDF guide for deeper explanations and how to add ML.
+ 
