@@ -1,0 +1,35 @@
+# Virtual Environment
+env/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Old/experimental code (keep main_files/ only)
+beamng_client/
+
+# Runtime generated files
+main_files/live_data.json
+*.log
+
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets/Config (if any)
+*.env
+config.local.yaml

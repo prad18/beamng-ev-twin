@@ -1,0 +1,7 @@
+{
+  "name": "consumer_commute",
+  "map": "west_coast_usa",
+  "ambient_C": 30,
+  "charge_target": 0.9,
+  "notes": "Placeholder. Script your route/waypoints and gentle driving profile."
+}

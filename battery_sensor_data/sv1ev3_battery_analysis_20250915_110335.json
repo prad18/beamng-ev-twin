@@ -1,0 +1,5870 @@
+{
+  "timestamp": "2025-09-15T11:03:11.832516",
+  "vehicle_model": "sv1ev3",
+  "vehicle_name": "sv1ev3",
+  "test_description": "Battery sensor data analysis for degradation testing",
+  "electrics_data": {
+    "auto_d": 0.0,
+    "regenThrottle": 0.0,
+    "hasESC": 1.0,
+    "lowhighbeam_signal_R": 0.0,
+    "wheelspeed": 0.0011616941371497477,
+    "horn": 0.0,
+    "airflowspeed": 0.004115504979991309,
+    "brakelights_halogen": 0.9999999999999999,
+    "lowbeam": 0.0,
+    "oil": 0.0,
+    "hoodCatchCoupler_notAttached": 0.0,
+    "virtualAirspeed": -0.002429765485289073,
+    "lowhighbeam_halogen": 0.0,
+    "running": true,
+    "signal_halogen_L": 0.0,
+    "parking": 0.0,
+    "signal_halogen_R": 0.0,
+    "steering": 3.832489881006043e-10,
+    "doorRRCoupler_notAttached": 0.0,
+    "brakelight_signal_L": 1.0,
+    "freezeState": false,
+    "boostMax": 0.0,
+    "gearboxMode": "arcade",
+    "auto_n": 1.0,
+    "esc": 0.0,
+    "hoodLatchCoupler_notAttached": 0.0,
+    "odometer": 0.035206313975078236,
+    "brake_input": 0.0,
+    "smoothShiftLogicAV": 0.0026688604865359802,
+    "lowhighbeam_signal_L": 0.0,
+    "gear": "N",
+    "ignition": true,
+    "hasABS": 1.0,
+    "doorRLCoupler_notAttached": 0.0,
+    "trip": 0.035206313975078236,
+    "wheelThermals": {
+      "RR": {
+        "brakeSurfaceTemperature": 14.998681640625023,
+        "brakeCoreTemperature": 14.999297919221116,
+        "brakeThermalEfficiency": 0.9589902616932667
+      },
+      "RL": {
+        "brakeSurfaceTemperature": 14.998681640625023,
+        "brakeCoreTemperature": 14.999297919221116,
+        "brakeThermalEfficiency": 0.9589902616932667
+      },
+      "FL": {
+        "brakeSurfaceTemperature": 14.998681640625023,
+        "brakeCoreTemperature": 14.999404421332368,
+        "brakeThermalEfficiency": 0.9589902616932667
+      },
+      "FR": {
+        "brakeSurfaceTemperature": 14.998681640625023,
+        "brakeCoreTemperature": 14.999404421332368,
+        "brakeThermalEfficiency": 0.9589902616932667
+      }
+    },
+    "abs": 0.0,
+    "lowhighbeam": 0.0,
+    "nop": 0.0,
+    "highbeam_wigwag_R": 0.0,
+    "maxrpm": 13000.0,
+    "idlerpm": 0.0,
+    "maxGearIndex": 1.0,
+    "clutch": 0.0,
+    "minGearIndex": 1.0,
+    "doorFRCoupler_notAttached": 0.0,
+    "brakelight_signal_R": 1.0,
+    "gearModeIndex": 3.0,
+    "parkingbrakelight": 1.0,
+    "parkingbrake_input": 1.0,
+    "tailgateCoupler_notAttached": 0.0,
+    "lowpressure": 0.0,
+    "reverse": 0.0,
+    "regenFromOnePedal": 0.0,
+    "lightbar": 0.0,
+    "engineRunning": 1.0,
+    "lights": 0.0,
+    "regenFromBrake": 0.0,
+    "doorFLCoupler_notAttached": 0.0,
+    "lowfuel": false,
+    "parkingbrake": 1.0,
+    "fuel": 1.0,
+    "steering_input": 7.045950413276252e-13,
+    "boost": 0.0,
+    "ignitionLevel": 2.0,
+    "maxRegenStrength": 3.0,
+    "isABSBrakeActive": 0.0,
+    "accXSmooth": -0.0020036274745380456,
+    "dseWarningPulse": 0.0,
+    "accYSmooth": -0.0008828022672392217,
+    "clutch_input": 0.0,
+    "rpm": 0.30206423408950384,
+    "reverse_wigwag_L": 0.0,
+    "hasTCS": 1.0,
+    "tcs": 0.0,
+    "brake": 0.3,
+    "chargingcapCoupler_notAttached": 0.0,
+    "reverse_wigwag_R": 0.0,
+    "reverse_halogen": 0.0,
+    "accZSmooth": -9.805246917523558,
+    "auto_r": 0.0,
+    "rpmspin": 58.03939133602627,
+    "altitude": 0.20165656518591651,
+    "hazard": 0.0,
+    "highbeam": 0.0,
+    "regenStrength": 3.0,
+    "airspeed": 0.003954639642448717,
+    "steeringUnassisted": 0.0,
+    "isYCBrakeActive": 0.0,
+    "auto_p": 0.0,
+    "throttle": 0.0,
+    "highbeam_wigwag_L": 0.0,
+    "throttle_input": 0.0,
+    "electricalLoadCoef": 1.0,
+    "isTCBrakeActive": 0.0,
+    "turnsignal": 0.0,
+    "abs_active": 0.0,
+    "avg_wheel_av": 0.0033009742037393153,
+    "brake_lights": 1.0,
+    "check_engine": 0.0,
+    "clutch_ratio": 1.0,
+    "engine_load": 0.0,
+    "engine_throttle": 0.0,
+    "esc_active": false,
+    "fog_lights": 0.0,
+    "fuel_volume": 81.4,
+    "fuel_capacity": 81.4,
+    "gear_a": 0.6666666666666666,
+    "gear_index": 0.0,
+    "hazard_signal": false,
+    "is_shifting": false,
+    "headlights": 0.0,
+    "oil_temperature": 0.0,
+    "radiator_fan_spin": 0.0,
+    "rpm_tacho": 0.24555243495506918,
+    "signal_l": 0.0,
+    "left_signal": false,
+    "signal_r": 0.0,
+    "right_signal": false,
+    "tcs_active": false,
+    "water_temperature": 0.0
+  },
+  "powertrain_data": {
+    "0.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003378322115168001,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003378322115168001,
+        "outputTorque1": -7.8227798101507
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003378322115168001,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003378322115168001,
+        "outputTorque1": -7.8227798101507
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0008023144910112003,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0031173252500594005,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0032478236826137016,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003378322115168001,
+        "outputTorque2": -7.8175643564693,
+        "outputTorque1": -7.8175643564693
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0008261502371169602,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.025787720039953003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.00000644693,
+        "inputAV": 0.0
+      },
+      "time": 3.5730001697083997,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0031173252500594005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031173252500594005,
+        "outputTorque1": -7.8223768831903
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0031173252500594005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031173252500594005,
+        "outputTorque1": -7.8223768831903
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0032478236826137016,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880051188624,
+        "inputAV": 0.025787720039953003
+      }
+    },
+    "1.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.004125438630580902,
+        "gearRatio": 1.0,
+        "outputAV1": -0.004125438630580902,
+        "outputTorque1": 7.8227811809505
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.004125438630580902,
+        "gearRatio": 1.0,
+        "outputAV1": -0.004125438630580902,
+        "outputTorque1": 7.8227811809505
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0008135506650432902,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0020867120474577,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0031060753390193007,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.004125438630580902,
+        "outputTorque2": 7.8164123287926,
+        "outputTorque1": 7.8164123287926
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00010208193270955002,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.024662238191813003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000061655595,
+        "inputAV": 0.0
+      },
+      "time": 3.5835001702071,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0020867120474577,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020867120474577,
+        "outputTorque1": 7.8196337948515
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0020867120474577,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020867120474577,
+        "outputTorque1": 7.8196337948515
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0031060753390193007,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880048954543,
+        "inputAV": -0.024662238191813003
+      }
+    },
+    "2.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0032534769270569004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032534769270569004,
+        "outputTorque1": -7.8218496270482
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0032534769270569004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032534769270569004,
+        "outputTorque1": -7.8218496270482
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0007701194845140003,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.002552515361458101,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0029029961442575,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0032534769270569004,
+        "outputTorque2": -7.8168269093682,
+        "outputTorque1": -7.8168269093682
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00023794478329364007,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.023049789385404,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000057624473,
+        "inputAV": 0.0
+      },
+      "time": 3.5940001707058,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002552515361458101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002552515361458101,
+        "outputTorque1": -7.8207674825832
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002552515361458101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002552515361458101,
+        "outputTorque1": -7.8207674825832
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0029029961442575,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880045753832,
+        "inputAV": 0.023049789385404
+      }
+    },
+    "3.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0037502781488001013,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0037502781488001013,
+        "outputTorque1": -7.8222883631372
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0037502781488001013,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0037502781488001013,
+        "outputTorque1": -7.8222883631372
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0010763996979221999,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0022141865920275007,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.002982232370413801,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0037502781488001013,
+        "outputTorque2": -7.8164986837311,
+        "outputTorque1": -7.8164986837311
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0005759099731221802,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.023678925021086008,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000059197313,
+        "inputAV": 0.0
+      },
+      "time": 3.6150001717033,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0022141865920275007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0022141865920275007,
+        "outputTorque1": -7.8199169449919
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0022141865920275007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0022141865920275007,
+        "outputTorque1": -7.8199169449919
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.002982232370413801,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880047002666,
+        "inputAV": 0.023678925021086008
+      }
+    },
+    "4.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0033745463006198016,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0033745463006198016,
+        "outputTorque1": 7.8208633341684
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0033745463006198016,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0033745463006198016,
+        "outputTorque1": 7.8208633341684
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0007969302823767102,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0016035917215049002,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002489069011062401,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0033745463006198016,
+        "outputTorque2": 7.8156537095895,
+        "outputTorque1": 7.8156537095895
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020662492606789012,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.019763207947835003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.000004940802,
+        "inputAV": 0.0
+      },
+      "time": 3.625500172202,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0016035917215049002,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0016035917215049002,
+        "outputTorque1": 7.8181293344892
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0016035917215049002,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0016035917215049002,
+        "outputTorque1": 7.8181293344892
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002489069011062401,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880039229968,
+        "inputAV": -0.019763207947835003
+      }
+    },
+    "5.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.002633463591337201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002633463591337201,
+        "outputTorque1": -7.819174741582
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002633463591337201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002633463591337201,
+        "outputTorque1": -7.819174741582
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0018648549448699006,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0012886661570519005,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.001961064874194601,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.002633463591337201,
+        "outputTorque2": -7.8151092004897,
+        "outputTorque1": -7.8151092004897
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0010766792111099003,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.015570855101105004,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000038927138,
+        "inputAV": 0.0
+      },
+      "time": 3.6360001727007,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0012886661570519005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0012886661570519005,
+        "outputTorque1": -7.817098643303
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0012886661570519005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0012886661570519005,
+        "outputTorque1": -7.817098643303
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.001961064874194601,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880030908147,
+        "inputAV": 0.015570855101105004
+      }
+    },
+    "6.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0048173358663917,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0048173358663917,
+        "outputTorque1": 7.8258682943729
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0048173358663917,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0048173358663917,
+        "outputTorque1": 7.8258682943729
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0015440304996446007,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.003577994648367201,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0041976652573794005,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0048173358663917,
+        "outputTorque2": 7.8184312912623,
+        "outputTorque1": 7.8184312912623
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0013892793795094005,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.03332946214359302,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000083323655,
+        "inputAV": 0.0
+      },
+      "time": 3.6465001731995,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003577994648367201,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003577994648367201,
+        "outputTorque1": 7.8239549994005
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003577994648367201,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003577994648367201,
+        "outputTorque1": 7.8239549994005
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0041976652573794005,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880066158982,
+        "inputAV": -0.03332946214359302
+      }
+    },
+    "7.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003297587623819701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003297587623819701,
+        "outputTorque1": 7.8216080035572
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003297587623819701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003297587623819701,
+        "outputTorque1": 7.8216080035572
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003345945384353401,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.002300096675753601,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0027988421497867006,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003297587623819701,
+        "outputTorque2": 7.8165171877835,
+        "outputTorque1": 7.8165171877835
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0003421235887799401,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.022222806669306,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000055557017,
+        "inputAV": 0.0
+      },
+      "time": 3.6675001741969,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002300096675753601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002300096675753601,
+        "outputTorque1": 7.8200680770315
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002300096675753601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002300096675753601,
+        "outputTorque1": 7.8200680770315
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0027988421497867006,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880044112271,
+        "inputAV": -0.022222806669306
+      }
+    },
+    "8.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.002289123367518201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002289123367518201,
+        "outputTorque1": -7.819532923316
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002289123367518201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002289123367518201,
+        "outputTorque1": -7.819532923316
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 8.5109262727201e-05,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0020481392275542003,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0021686312975362004,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.002289123367518201,
+        "outputTorque2": -7.8159989746613,
+        "outputTorque1": -7.8159989746613
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0014537370298058,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.017218932502437008,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000043047331,
+        "inputAV": 0.0
+      },
+      "time": 3.6780001746956,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0020481392275542003,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0020481392275542003,
+        "outputTorque1": -7.8191608920008004
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0020481392275542003,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0020481392275542003,
+        "outputTorque1": -7.8191608920008004
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0021686312975362004,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880034179581,
+        "inputAV": 0.017218932502437008
+      }
+    },
+    "9.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0042977500706911,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0042977500706911,
+        "outputTorque1": 7.8223253230042005
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0042977500706911,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0042977500706911,
+        "outputTorque1": 7.8223253230042005
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0022212534677237016,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0014874394983053006,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002892594784498201,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0042977500706911,
+        "outputTorque2": 7.815690456445,
+        "outputTorque1": 7.815690456445
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0005894430796615801,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.022967202588916002,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000057418006,
+        "inputAV": 0.0
+      },
+      "time": 3.6885001751943003,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0014874394983053006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0014874394983053006,
+        "outputTorque1": 7.8179867655425
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0014874394983053006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0014874394983053006,
+        "outputTorque1": 7.8179867655425
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002892594784498201,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880045589897,
+        "inputAV": -0.022967202588916002
+      }
+    },
+    "10.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003085325006395601,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003085325006395601,
+        "outputTorque1": -7.8215799249255
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003085325006395601,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003085325006395601,
+        "outputTorque1": -7.8215799249255
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00072415429167449,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0025709709152579004,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.002828147960826801,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003085325006395601,
+        "outputTorque2": -7.8168168001806,
+        "outputTorque1": -7.8168168001806
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0012116021243855002,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.022455494808964013,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000056138737,
+        "inputAV": 0.0
+      },
+      "time": 3.6990001756931004,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0025709709152579004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0025709709152579004,
+        "outputTorque1": -7.8207858650796
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0025709709152579004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0025709709152579004,
+        "outputTorque1": -7.8207858650796
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.002828147960826801,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880044574157,
+        "inputAV": 0.022455494808964013
+      }
+    },
+    "11.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0030692310538143,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0030692310538143,
+        "outputTorque1": -7.8211487217907
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0030692310538143,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0030692310538143,
+        "outputTorque1": -7.8211487217907
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0003729493473656501,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0022514376323670006,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0026603343430907007,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0030692310538143,
+        "outputTorque2": -7.8164104428898,
+        "outputTorque1": -7.8164104428898
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0008558819536119703,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.021123054684140007,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000052807637,
+        "inputAV": 0.0
+      },
+      "time": 3.7200001766905,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0022514376323670006,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0022514376323670006,
+        "outputTorque1": -7.8198862123066
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0022514376323670006,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0022514376323670006,
+        "outputTorque1": -7.8198862123066
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0026603343430907007,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880041929264,
+        "inputAV": 0.021123054684140007
+      }
+    },
+    "12.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0038069793954492014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0038069793954492014,
+        "outputTorque1": 7.824520985419
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0038069793954492014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0038069793954492014,
+        "outputTorque1": 7.824520985419
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0006534694693982601,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0039053098298609005,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0038561446126550015,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0038069793954492014,
+        "outputTorque2": 7.8186437706283005,
+        "outputTorque1": 7.8186437706283005
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0006408353801816702,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.030617788224481003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000076544471,
+        "inputAV": 0.0
+      },
+      "time": 3.7305001771892,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0039053098298609005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0039053098298609005,
+        "outputTorque1": 7.8246727879437
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0039053098298609005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0039053098298609005,
+        "outputTorque1": 7.8246727879437
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0038561446126550015,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.88006077631,
+        "inputAV": -0.030617788224481003
+      }
+    },
+    "13.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003998073749244202,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003998073749244202,
+        "outputTorque1": -7.8249124639369
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003998073749244202,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003998073749244202,
+        "outputTorque1": -7.8249124639369
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0014687054790556,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0039516929537058015,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003974883351475002,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003998073749244202,
+        "outputTorque2": -7.818740237682801,
+        "outputTorque1": -7.818740237682801
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0007477031904272703,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.031560573810712,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000078901435,
+        "inputAV": 0.0
+      },
+      "time": 3.741000177688,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0039516929537058015,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0039516929537058015,
+        "outputTorque1": -7.8248408612648
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0039516929537058015,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0039516929537058015,
+        "outputTorque1": -7.8248408612648
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003974883351475002,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880062647739,
+        "inputAV": 0.031560573810712
+      }
+    },
+    "14.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0025954472366720004,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0025954472366720004,
+        "outputTorque1": 7.8201377873602
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0025954472366720004,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0025954472366720004,
+        "outputTorque1": 7.8201377873602
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0009760702960193203,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0021044947206974,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0023499709786847,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0025954472366720004,
+        "outputTorque2": 7.8161309359162,
+        "outputTorque1": 7.8161309359162
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0004971561138518201,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.018658769570757003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000046646924,
+        "inputAV": 0.0
+      },
+      "time": 3.7515001781867,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0021044947206974,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0021044947206974,
+        "outputTorque1": 7.819379854866
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0021044947206974,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0021044947206974,
+        "outputTorque1": 7.819379854866
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0023499709786847,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880037037658001,
+        "inputAV": -0.018658769570757003
+      }
+    },
+    "15.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003088505240157201,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003088505240157201,
+        "outputTorque1": 7.8202962159202
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003088505240157201,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003088505240157201,
+        "outputTorque1": 7.8202962159202
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0019255054648966007,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0015491213416681008,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002318813290912701,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003088505240157201,
+        "outputTorque2": 7.8155281815304,
+        "outputTorque1": 7.8155281815304
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0016231646295637003,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.018411377529847006,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000046028444,
+        "inputAV": 0.0
+      },
+      "time": 3.7725001791841,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0015491213416681008,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0015491213416681008,
+        "outputTorque1": 7.8179197150577
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0015491213416681008,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0015491213416681008,
+        "outputTorque1": 7.8179197150577
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002318813290912701,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880036546584,
+        "inputAV": -0.018411377529847006
+      }
+    },
+    "16.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003885083366185401,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003885083366185401,
+        "outputTorque1": -7.8238047327437
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003885083366185401,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003885083366185401,
+        "outputTorque1": -7.8238047327437
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0011484776623547003,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003229835303500301,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003557459334842901,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003885083366185401,
+        "outputTorque2": -7.817806941043,
+        "outputTorque1": -7.817806941043
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002274983795359701,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.028246227118652,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000070615568,
+        "inputAV": 0.0
+      },
+      "time": 3.7830001796829,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003229835303500301,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003229835303500301,
+        "outputTorque1": -7.8227931607846
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003229835303500301,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003229835303500301,
+        "outputTorque1": -7.8227931607846
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003557459334842901,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880056068761,
+        "inputAV": 0.028246227118652
+      }
+    },
+    "17.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0032440307550132006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0032440307550132006,
+        "outputTorque1": 7.8219085413994005
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0032440307550132006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0032440307550132006,
+        "outputTorque1": 7.8219085413994005
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00040023398469202004,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0026122531853616016,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0029281419701874005,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0032440307550132006,
+        "outputTorque2": 7.8169004067198005,
+        "outputTorque1": 7.8169004067198005
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0015697645721957005,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.023249447243288,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000058123618,
+        "inputAV": 0.0
+      },
+      "time": 3.7935001801815997,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0026122531853616016,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0026122531853616016,
+        "outputTorque1": 7.8209332031873
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0026122531853616016,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0026122531853616016,
+        "outputTorque1": 7.8209332031873
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0029281419701874005,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880046150153,
+        "inputAV": -0.023249447243288
+      }
+    },
+    "18.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0013801890891045005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0013801890891045005,
+        "outputTorque1": 7.8180032764086
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0013801890891045005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0013801890891045005,
+        "outputTorque1": 7.8180032764086
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0008759681950323303,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0020910990424454004,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0017356440657750004,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0013801890891045005,
+        "outputTorque2": 7.8158725404928,
+        "outputTorque1": 7.8158725404928
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -9.0372283011675e-05,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.013781013882253003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000034452535,
+        "inputAV": 0.0
+      },
+      "time": 3.814500181179,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0020910990424454004,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020910990424454004,
+        "outputTorque1": 7.8191007791945
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0020910990424454004,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020910990424454004,
+        "outputTorque1": 7.8191007791945
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0017356440657750004,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880027355313,
+        "inputAV": -0.013781013882253003
+      }
+    },
+    "19.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.004136197734624101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.004136197734624101,
+        "outputTorque1": -7.824622335323
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.004136197734624101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.004136197734624101,
+        "outputTorque1": -7.824622335323
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0004986765561625402,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003531053662300102,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0038336256984621018,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.004136197734624101,
+        "outputTorque2": -7.8182368732603,
+        "outputTorque1": -7.8182368732603
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0006979373283684301,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.030438988045789005,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.000007609747,
+        "inputAV": 0.0
+      },
+      "time": 3.8250001816778,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003531053662300102,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003531053662300102,
+        "outputTorque1": -7.8236881139042005
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003531053662300102,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003531053662300102,
+        "outputTorque1": -7.8236881139042005
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0038336256984621018,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880060421391,
+        "inputAV": 0.030438988045789005
+      }
+    },
+    "20.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0027158213779330006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0027158213779330006,
+        "outputTorque1": 7.8219688953748
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0027158213779330006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0027158213779330006,
+        "outputTorque1": 7.8219688953748
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0007537229103036201,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.003389503806829501,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0030526625923812008,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0027158213779330006,
+        "outputTorque2": 7.8177762103315,
+        "outputTorque1": 7.8177762103315
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0018465674947947006,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.024238140983507003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000060595352,
+        "inputAV": 0.0
+      },
+      "time": 3.8355001821765002,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003389503806829501,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003389503806829501,
+        "outputTorque1": 7.8230089263085
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003389503806829501,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003389503806829501,
+        "outputTorque1": 7.8230089263085
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0030526625923812008,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.88004811271,
+        "inputAV": -0.024238140983507003
+      }
+    },
+    "21.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0032046837732196015,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032046837732196015,
+        "outputTorque1": -7.8231180264802
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0032046837732196015,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032046837732196015,
+        "outputTorque1": -7.8231180264802
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0013563459506258004,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003625135635957101,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003414909704588401,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0032046837732196015,
+        "outputTorque2": -7.8181706356711,
+        "outputTorque1": -7.8181706356711
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00118268141523,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.027114383054432006,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000067785958,
+        "inputAV": 0.0
+      },
+      "time": 3.8460001826752,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003625135635957101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003625135635957101,
+        "outputTorque1": -7.8237671200659
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003625135635957101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003625135635957101,
+        "outputTorque1": -7.8237671200659
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003414909704588401,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.88005382205,
+        "inputAV": 0.027114383054432006
+      }
+    },
+    "22.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.002291271695867201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002291271695867201,
+        "outputTorque1": -7.821121184837
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002291271695867201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002291271695867201,
+        "outputTorque1": -7.821121184837
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00015774916391820008,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0033039548434317004,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0027976132696494013,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.002291271695867201,
+        "outputTorque2": -7.8175839195928996,
+        "outputTorque1": -7.8175839195928996
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0012012305669486998,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.022213049361017003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000055532623,
+        "inputAV": 0.0
+      },
+      "time": 3.8670001836726,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0033039548434317004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0033039548434317004,
+        "outputTorque1": -7.8226845650802
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0033039548434317004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0033039548434317004,
+        "outputTorque1": -7.8226845650802
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0027976132696494013,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880044092903,
+        "inputAV": 0.022213049361017003
+      }
+    },
+    "23.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003834871342405701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003834871342405701,
+        "outputTorque1": 7.8250279917679
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003834871342405701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003834871342405701,
+        "outputTorque1": 7.8250279917679
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0007855431176722002,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.004268583375960601,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0040517273591831006,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003834871342405701,
+        "outputTorque2": 7.8191077173895005,
+        "outputTorque1": 7.8191077173895005
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00062881479971111,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.03217071523191401,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000080426788,
+        "inputAV": 0.0
+      },
+      "time": 3.8775001841714,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.004268583375960601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.004268583375960601,
+        "outputTorque1": 7.8256975564053
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.004268583375960601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.004268583375960601,
+        "outputTorque1": 7.8256975564053
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0040517273591831006,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.88006385887,
+        "inputAV": -0.03217071523191401
+      }
+    },
+    "24.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003321874886751201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003321874886751201,
+        "outputTorque1": -7.8228321141496
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003321874886751201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003321874886751201,
+        "outputTorque1": -7.8228321141496
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00014406378613785004,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0032367240637541012,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003279299475252602,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003321874886751201,
+        "outputTorque2": -7.8177038036994,
+        "outputTorque1": -7.8177038036994
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0015195416053757004,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.026037637833506003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000065094095,
+        "inputAV": 0.0
+      },
+      "time": 3.8880001846701,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0032367240637541012,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032367240637541012,
+        "outputTorque1": -7.822700658309
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0032367240637541012,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032367240637541012,
+        "outputTorque1": -7.822700658309
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003279299475252602,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880051684711,
+        "inputAV": 0.026037637833506003
+      }
+    },
+    "25.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003962755203247101,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003962755203247101,
+        "outputTorque1": 7.8233947552381
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003962755203247101,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003962755203247101,
+        "outputTorque1": 7.8233947552381
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0014771932037547003,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.002797661582008001,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0033802083926275017,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003962755203247101,
+        "outputTorque2": 7.8172770537553,
+        "outputTorque1": 7.8172770537553
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00022457371233031002,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.026838854637463008,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000067097137,
+        "inputAV": 0.0
+      },
+      "time": 3.8985001851688,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002797661582008001,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002797661582008001,
+        "outputTorque1": 7.8215960837056
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002797661582008001,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002797661582008001,
+        "outputTorque1": 7.8215960837056
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0033802083926275017,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880053275126,
+        "inputAV": -0.026838854637463008
+      }
+    },
+    "26.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.004871811717748601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.004871811717748601,
+        "outputTorque1": 7.8254439596907
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.004871811717748601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.004871811717748601,
+        "outputTorque1": 7.8254439596907
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002758275950327501,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.003166488138958801,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0040191499283537,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.004871811717748601,
+        "outputTorque2": 7.8179228567608,
+        "outputTorque1": 7.8179228567608
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0007789597148075704,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.03191205043112901,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000079780126,
+        "inputAV": 0.0
+      },
+      "time": 3.9195001861663,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003166488138958801,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003166488138958801,
+        "outputTorque1": 7.8228112811497
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003166488138958801,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003166488138958801,
+        "outputTorque1": 7.8228112811497
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0040191499283537,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.88006334542,
+        "inputAV": -0.03191205043112901
+      }
+    },
+    "27.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0031194838229567003,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031194838229567003,
+        "outputTorque1": -7.8208785169186
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0031194838229567003,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031194838229567003,
+        "outputTorque1": -7.8208785169186
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00023542388225906006,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0019678764510900008,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0025436801370233007,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0031194838229567003,
+        "outputTorque2": -7.8160626577928,
+        "outputTorque1": -7.8160626577928
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0021969343069941005,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.020196820287965,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000050492051,
+        "inputAV": 0.0
+      },
+      "time": 3.930000186665,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0019678764510900008,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0019678764510900008,
+        "outputTorque1": -7.819100665458
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0019678764510900008,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0019678764510900008,
+        "outputTorque1": -7.819100665458
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0025436801370233007,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880040090688,
+        "inputAV": 0.020196820287965
+      }
+    },
+    "28.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0045101717114449024,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0045101717114449024,
+        "outputTorque1": 7.8247555710529
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0045101717114449024,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0045101717114449024,
+        "outputTorque1": 7.8247555710529
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0016088738339022001,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.003120267065241901,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0038152193883434016,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0045101717114449024,
+        "outputTorque2": 7.8177927679648,
+        "outputTorque1": 7.8177927679648
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00036739272763953003,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.030292841943447002,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000075732105,
+        "inputAV": 0.0
+      },
+      "time": 3.9405001871636998,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003120267065241901,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003120267065241901,
+        "outputTorque1": 7.8226098362601
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003120267065241901,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003120267065241901,
+        "outputTorque1": 7.8226098362601
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0038152193883434016,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880060131291,
+        "inputAV": -0.030292841943447002
+      }
+    },
+    "29.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0025684668216854,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0025684668216854,
+        "outputTorque1": -7.8214085621018
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0025684668216854,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0025684668216854,
+        "outputTorque1": -7.8214085621018
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00011438870569691002,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0031489157117903007,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.002858691266737901,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0025684668216854,
+        "outputTorque2": -7.8174433630224,
+        "outputTorque1": -7.8174433630224
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0014513288624585,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.022698008657899008,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000056745022,
+        "inputAV": 0.0
+      },
+      "time": 3.9510001876624,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0031489157117903007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031489157117903007,
+        "outputTorque1": -7.8223046590983
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0031489157117903007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031489157117903007,
+        "outputTorque1": -7.8223046590983
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.002858691266737901,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880045055547,
+        "inputAV": 0.022698008657899008
+      }
+    },
+    "30.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0037046310026199007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0037046310026199007,
+        "outputTorque1": -7.8226906704627
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0037046310026199007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0037046310026199007,
+        "outputTorque1": -7.8226906704627
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00017564542940818004,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0025960791390389005,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003150355070829401,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0037046310026199007,
+        "outputTorque2": -7.8169714611209,
+        "outputTorque1": -7.8169714611209
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00011625235492829004,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.025013819262385002,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000062534548,
+        "inputAV": 0.0
+      },
+      "time": 3.9720001886598997,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0025960791390389005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0025960791390389005,
+        "outputTorque1": -7.8209792880957
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0025960791390389005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0025960791390389005,
+        "outputTorque1": -7.8209792880957
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003150355070829401,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880049652431,
+        "inputAV": 0.025013819262385002
+      }
+    },
+    "31.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0036232776474208013,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0036232776474208013,
+        "outputTorque1": 7.8227435797993
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0036232776474208013,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0036232776474208013,
+        "outputTorque1": 7.8227435797993
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00016412488184869005,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.002750354120507801,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.003186815883964301,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0036232776474208013,
+        "outputTorque2": 7.8171499637672,
+        "outputTorque1": 7.8171499637672
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0009183317888528104,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.02530331811867701,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000063258295,
+        "inputAV": 0.0
+      },
+      "time": 3.9825001891586,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002750354120507801,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002750354120507801,
+        "outputTorque1": 7.8213959604584
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002750354120507801,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002750354120507801,
+        "outputTorque1": 7.8213959604584
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.003186815883964301,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880050227086,
+        "inputAV": -0.02530331811867701
+      }
+    },
+    "32.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003198469756171101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003198469756171101,
+        "outputTorque1": -7.8214575970674
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003198469756171101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003198469756171101,
+        "outputTorque1": -7.8214575970674
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00042460105032660013,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.002317767823115,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.002758118789643001,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003198469756171101,
+        "outputTorque2": -7.8165197994578,
+        "outputTorque1": -7.8165197994578
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00027747213607654,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.021899463189766,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000054748658,
+        "inputAV": 0.0
+      },
+      "time": 3.9930001896573,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002317767823115,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002317767823115,
+        "outputTorque1": -7.8200979694231005
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002317767823115,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002317767823115,
+        "outputTorque1": -7.8200979694231005
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.002758118789643001,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880043470434,
+        "inputAV": 0.021899463189766
+      }
+    },
+    "33.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0044551794417202,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0044551794417202,
+        "outputTorque1": -7.8257827864883005
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0044551794417202,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0044551794417202,
+        "outputTorque1": -7.8257827864883005
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0019501142669469008,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0040102638304234,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.004232721636071801,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0044551794417202,
+        "outputTorque2": -7.8189048804662,
+        "outputTorque1": -7.8189048804662
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00010062821093015004,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.03360780979041002,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000084019524,
+        "inputAV": 0.0
+      },
+      "time": 4.0140001906548,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0040102638304234,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0040102638304234,
+        "outputTorque1": -7.8250959257676
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0040102638304234,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0040102638304234,
+        "outputTorque1": -7.8250959257676
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.004232721636071801,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880066711502,
+        "inputAV": 0.03360780979041002
+      }
+    },
+    "34.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0030909788329154006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030909788329154006,
+        "outputTorque1": 7.8203153836436
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0030909788329154006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030909788329154006,
+        "outputTorque1": 7.8203153836436
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0019266590243205005,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0015608979156241005,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002325938374269801,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0030909788329154006,
+        "outputTorque2": 7.8155435305213,
+        "outputTorque1": 7.8155435305213
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0007384619093500102,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.018467950691702005,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000046169877,
+        "inputAV": 0.0
+      },
+      "time": 4.0245001911535,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0015608979156241005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0015608979156241005,
+        "outputTorque1": 7.8179532447235
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0015608979156241005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0015608979156241005,
+        "outputTorque1": 7.8179532447235
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002325938374269801,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880036658882,
+        "inputAV": -0.018467950691702005
+      }
+    },
+    "35.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0032892622984946013,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032892622984946013,
+        "outputTorque1": -7.8225255257276
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0032892622984946013,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032892622984946013,
+        "outputTorque1": -7.8225255257276
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0019906451925635017,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0030387793667614018,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003164020832628001,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0032892622984946013,
+        "outputTorque2": -7.8174475625912,
+        "outputTorque1": -7.8174475625912
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.000258480431512,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.025122325411066,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000062805814,
+        "inputAV": 0.0
+      },
+      "time": 4.0350001916522,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0030387793667614018,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0030387793667614018,
+        "outputTorque1": -7.8221388301776
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0030387793667614018,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0030387793667614018,
+        "outputTorque1": -7.8221388301776
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003164020832628001,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880049867816,
+        "inputAV": 0.025122325411066
+      }
+    },
+    "36.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0028259607497603005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0028259607497603005,
+        "outputTorque1": 7.8222757233527
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0028259607497603005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0028259607497603005,
+        "outputTorque1": 7.8222757233527
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0010891404235736002,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0034805759787560012,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.003153268364258102,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0028259607497603005,
+        "outputTorque2": 7.8179130051472,
+        "outputTorque1": 7.8179130051472
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0009509556693956303,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.025036950812209007,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000062592377,
+        "inputAV": 0.0
+      },
+      "time": 4.0455001921509,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0034805759787560012,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0034805759787560012,
+        "outputTorque1": 7.8232863183432
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0034805759787560012,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0034805759787560012,
+        "outputTorque1": 7.8232863183432
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.003153268364258102,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880049698347,
+        "inputAV": -0.025036950812209007
+      }
+    },
+    "37.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0021901689469814,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0021901689469814,
+        "outputTorque1": 7.8205279951666
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0021901689469814,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0021901689469814,
+        "outputTorque1": 7.8205279951666
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00055381539277732,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.002973457099869801,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002581813023425601,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0021901689469814,
+        "outputTorque2": 7.8171468123462,
+        "outputTorque1": 7.8171468123462
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0013056329917163006,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.020499595406000003,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000051248989,
+        "inputAV": 0.0
+      },
+      "time": 4.0665001931484,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002973457099869801,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002973457099869801,
+        "outputTorque1": 7.821737235417
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002973457099869801,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002973457099869801,
+        "outputTorque1": 7.821737235417
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002581813023425601,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880040691697,
+        "inputAV": -0.020499595406000003
+      }
+    },
+    "38.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0038347865920514016,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0038347865920514016,
+        "outputTorque1": -7.82428003018
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0038347865920514016,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0038347865920514016,
+        "outputTorque1": -7.82428003018
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0011282457271591,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003675961168482901,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0037553738802671016,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0038347865920514016,
+        "outputTorque2": -7.8183598866392,
+        "outputTorque1": -7.8183598866392
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00044646684546024014,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.029817668609321002,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000074544172,
+        "inputAV": 0.0
+      },
+      "time": 4.0770001936471,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003675961168482901,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003675961168482901,
+        "outputTorque1": -7.8240348354911005
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003675961168482901,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003675961168482901,
+        "outputTorque1": -7.8240348354911005
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0037553738802671016,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880059188072,
+        "inputAV": 0.029817668609321002
+      }
+    },
+    "39.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.002493280684575401,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002493280684575401,
+        "outputTorque1": 7.8199164490637
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002493280684575401,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002493280684575401,
+        "outputTorque1": 7.8199164490637
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0007878739270381601,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0020701622124761005,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002281721448525801,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.002493280684575401,
+        "outputTorque2": 7.8160673223428,
+        "outputTorque1": 7.8160673223428
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0025216131471097005,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.018116868301294997,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000045292171,
+        "inputAV": 0.0
+      },
+      "time": 4.0875001941458,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0020701622124761005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020701622124761005,
+        "outputTorque1": 7.8192632387665
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0020701622124761005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020701622124761005,
+        "outputTorque1": 7.8192632387665
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002281721448525801,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880035961984,
+        "inputAV": -0.018116868301294997
+      }
+    },
+    "40.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003584438934922201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003584438934922201,
+        "outputTorque1": -7.8230126022786
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003584438934922201,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003584438934922201,
+        "outputTorque1": -7.8230126022786
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0015489908400923007,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003017197363078601,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0033008181490004006,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003584438934922201,
+        "outputTorque2": -7.8174789454508,
+        "outputTorque1": -7.8174789454508
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00042774775647558017,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.02620849610306301,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.000006552124,
+        "inputAV": 0.0
+      },
+      "time": 4.0980001946446,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003017197363078601,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003017197363078601,
+        "outputTorque1": -7.82213689474
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003017197363078601,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003017197363078601,
+        "outputTorque1": -7.82213689474
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0033008181490004006,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880052023865,
+        "inputAV": 0.02620849610306301
+      }
+    },
+    "41.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0029529456514865004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0029529456514865004,
+        "outputTorque1": -7.8208388551922
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0029529456514865004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0029529456514865004,
+        "outputTorque1": -7.8208388551922
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0006408800836652501,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0021664339583366997,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0025596898049116005,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0029529456514865004,
+        "outputTorque2": -7.8162800976955005,
+        "outputTorque1": -7.8162800976955005
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0005392190068960201,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.020323937050998008,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000050809843,
+        "inputAV": 0.0
+      },
+      "time": 4.119000195642,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0021664339583366997,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0021664339583366997,
+        "outputTorque1": -7.8196246384404
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0021664339583366997,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0021664339583366997,
+        "outputTorque1": -7.8196246384404
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0025596898049116005,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880040343015,
+        "inputAV": 0.020323937050998008
+      }
+    },
+    "42.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003080124035477601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003080124035477601,
+        "outputTorque1": 7.8224356126731
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003080124035477601,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003080124035477601,
+        "outputTorque1": 7.8224356126731
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0003129489487037101,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.003256318857893301,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.003168221446685501,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003080124035477601,
+        "outputTorque2": 7.8176805171871,
+        "outputTorque1": 7.8176805171871
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002378634177148301,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.025155678286683004,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000062889196,
+        "inputAV": 0.0
+      },
+      "time": 4.1295001961407,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003256318857893301,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003256318857893301,
+        "outputTorque1": 7.8227076222399
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003256318857893301,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003256318857893301,
+        "outputTorque1": 7.8227076222399
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.003168221446685501,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880049934021,
+        "inputAV": -0.025155678286683004
+      }
+    },
+    "43.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0034405537880957014,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0034405537880957014,
+        "outputTorque1": -7.8233080498623995
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0034405537880957014,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0034405537880957014,
+        "outputTorque1": -7.8233080498623995
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0009717255015857503,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0034500302281231013,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0034452920081094007,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0034405537880957014,
+        "outputTorque2": -7.8179965229243,
+        "outputTorque1": -7.8179965229243
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0012837683316320005,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.02735561854438901,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000068389046,
+        "inputAV": 0.0
+      },
+      "time": 4.1400001966394,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0034500302281231013,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0034500302281231013,
+        "outputTorque1": -7.8233226795905
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0034500302281231013,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0034500302281231013,
+        "outputTorque1": -7.8233226795905
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0034452920081094007,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880054300903,
+        "inputAV": 0.02735561854438901
+      }
+    },
+    "44.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0030107856728137012,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030107856728137012,
+        "outputTorque1": 7.82201797221
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0030107856728137012,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030107856728137012,
+        "outputTorque1": 7.82201797221
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0007891752175055401,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0030210781842470017,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0030159319285303003,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0030107856728137012,
+        "outputTorque2": 7.8173699212883,
+        "outputTorque1": 7.8173699212883
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00021126194042154006,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.023946499512531007,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000059866249,
+        "inputAV": 0.0
+      },
+      "time": 4.1505001971382,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0030210781842470017,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030210781842470017,
+        "outputTorque1": 7.8220338617891
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0030210781842470017,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030210781842470017,
+        "outputTorque1": 7.8220338617891
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0030159319285303003,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880047533802,
+        "inputAV": -0.023946499512531007
+      }
+    },
+    "45.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0051390086300671005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0051390086300671005,
+        "outputTorque1": 7.8268131598432
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0051390086300671005,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0051390086300671005,
+        "outputTorque1": 7.8268131598432
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0006014690734446002,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.003882658900693102,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0045108337653801,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0051390086300671005,
+        "outputTorque2": 7.8188795583201,
+        "outputTorque1": 7.8188795583201
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0021897540427744003,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.03581602009711801,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.000008954005,
+        "inputAV": 0.0
+      },
+      "time": 4.1715001981356,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003882658900693102,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003882658900693102,
+        "outputTorque1": 7.8248736071309
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003882658900693102,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003882658900693102,
+        "outputTorque1": 7.8248736071309
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0045108337653801,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.8800710948,
+        "inputAV": -0.03581602009711801
+      }
+    },
+    "46.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.002842785324901301,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002842785324901301,
+        "outputTorque1": -7.8210129657762995
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002842785324901301,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002842785324901301,
+        "outputTorque1": -7.8210129657762995
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0007092826999723902,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0024565621279180007,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0026496737264097006,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.002842785324901301,
+        "outputTorque2": -7.8166242737917,
+        "outputTorque1": -7.8166242737917
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0004121593083255001,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.021038409387693007,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000052596023,
+        "inputAV": 0.0
+      },
+      "time": 4.1820001986343,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0024565621279180007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0024565621279180007,
+        "outputTorque1": -7.8204167144048
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0024565621279180007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0024565621279180007,
+        "outputTorque1": -7.8204167144048
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0026496737264097006,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880041761243,
+        "inputAV": 0.021038409387693007
+      }
+    },
+    "47.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0047716982662678,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0047716982662678,
+        "outputTorque1": 7.826182551451
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0047716982662678,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0047716982662678,
+        "outputTorque1": 7.826182551451
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0027834945358336007,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0038900515064597017,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.004330874886363699,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0047716982662678,
+        "outputTorque2": 7.8188160036675995,
+        "outputTorque1": 7.8188160036675995
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0006607840186916299,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.034387146597728006,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000085967866,
+        "inputAV": 0.0
+      },
+      "time": 4.1925001991331,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0038900515064597017,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0038900515064597017,
+        "outputTorque1": 7.8248214651833
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0038900515064597017,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0038900515064597017,
+        "outputTorque1": 7.8248214651833
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.004330874886363699,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880068258486,
+        "inputAV": -0.034387146597728006
+      }
+    },
+    "48.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0035096581559628014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0035096581559628014,
+        "outputTorque1": 7.8234650966084
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0035096581559628014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0035096581559628014,
+        "outputTorque1": 7.8234650966084
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0002883600245695601,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0034790686331689015,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.003494363394565902,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0035096581559628014,
+        "outputTorque2": 7.8180468863472,
+        "outputTorque1": 7.8180468863472
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00073540024459362,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.02774524535285301,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000069363113,
+        "inputAV": 0.0
+      },
+      "time": 4.2135002001305,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0034790686331689015,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0034790686331689015,
+        "outputTorque1": 7.8234178725031
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0034790686331689015,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0034790686331689015,
+        "outputTorque1": 7.8234178725031
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.003494363394565902,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880055074312,
+        "inputAV": -0.02774524535285301
+      }
+    },
+    "49.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0031259634997696014,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031259634997696014,
+        "outputTorque1": -7.8210165878900995
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0031259634997696014,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0031259634997696014,
+        "outputTorque1": -7.8210165878900995
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0016181255923584004,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0020683621987700007,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.002597162849269801,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0031259634997696014,
+        "outputTorque2": -7.8161907254392,
+        "outputTorque1": -7.8161907254392
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0005860958481207499,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.020621473023202004,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000051553683,
+        "inputAV": 0.0
+      },
+      "time": 4.2240002006292,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0020683621987700007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0020683621987700007,
+        "outputTorque1": -7.8193838630016
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0020683621987700007,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0020683621987700007,
+        "outputTorque1": -7.8193838630016
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.002597162849269801,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880040933624,
+        "inputAV": 0.020621473023202004
+      }
+    },
+    "50.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003669947385788001,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003669947385788001,
+        "outputTorque1": 7.8229639660643
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003669947385788001,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003669947385788001,
+        "outputTorque1": 7.8229639660643
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0006729477318003803,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0028605742845684017,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0032652608351782008,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003669947385788001,
+        "outputTorque2": 7.8172983012901,
+        "outputTorque1": 7.8172983012901
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00029202812584117006,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.025926171031315,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000064815428,
+        "inputAV": 0.0
+      },
+      "time": 4.234500201128,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0028605742845684017,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0028605742845684017,
+        "outputTorque1": 7.8217144558706
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0028605742845684017,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0028605742845684017,
+        "outputTorque1": 7.8217144558706
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0032652608351782008,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880051463449,
+        "inputAV": -0.025926171031315
+      }
+    },
+    "51.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.002329250331968101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002329250331968101,
+        "outputTorque1": -7.820023032141
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.002329250331968101,
+        "gearRatio": 1.0,
+        "outputAV1": 0.002329250331968101,
+        "outputTorque1": -7.820023032141
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00017582185682841006,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0023811729624867,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0023552116472274004,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.002329250331968101,
+        "outputTorque2": -7.8164271354785,
+        "outputTorque1": -7.8164271354785
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0007191051845438802,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.018700380478985996,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000046750951,
+        "inputAV": 0.0
+      },
+      "time": 4.2450002016267,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0023811729624867,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0023811729624867,
+        "outputTorque1": -7.820103190298
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0023811729624867,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0023811729624867,
+        "outputTorque1": -7.820103190298
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0023552116472274004,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880037120255,
+        "inputAV": 0.018700380478985996
+      }
+    },
+    "52.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003029539017006801,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003029539017006801,
+        "outputTorque1": -7.8234996801546
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003029539017006801,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003029539017006801,
+        "outputTorque1": -7.8234996801546
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0006093487609177802,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0041694305837154015,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003599484800361101,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003029539017006801,
+        "outputTorque2": -7.8188226778201,
+        "outputTorque1": -7.8188226778201
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0004864288493990902,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.028579909314867008,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000071449773,
+        "inputAV": 0.0
+      },
+      "time": 4.2660002026241,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0041694305837154015,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0041694305837154015,
+        "outputTorque1": -7.8252594447553
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0041694305837154015,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0041694305837154015,
+        "outputTorque1": -7.8252594447553
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003599484800361101,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.88005673112,
+        "inputAV": 0.028579909314867008
+      }
+    },
+    "53.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003175648860633401,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003175648860633401,
+        "outputTorque1": 7.821345096869
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003175648860633401,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003175648860633401,
+        "outputTorque1": 7.821345096869
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0006111440015956801,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0022601180244237007,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002717883442528501,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003175648860633401,
+        "outputTorque2": 7.8164425301579,
+        "outputTorque1": 7.8164425301579
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0014903753763065004,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.021579994533677007,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000053949986,
+        "inputAV": 0.0
+      },
+      "time": 4.2765002031229,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0022601180244237007,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0022601180244237007,
+        "outputTorque1": 7.819931700364
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0022601180244237007,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0022601180244237007,
+        "outputTorque1": 7.819931700364
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002717883442528501,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880042836289,
+        "inputAV": -0.021579994533677007
+      }
+    },
+    "54.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0052867336198688004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0052867336198688004,
+        "outputTorque1": -7.8266525495970996
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0052867336198688004,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0052867336198688004,
+        "outputTorque1": -7.8266525495970996
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0003758609527722001,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003551417263224701,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.004419075441546702,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0052867336198688004,
+        "outputTorque2": -7.8184908902347,
+        "outputTorque1": -7.8184908902347
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0023588738404214005,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.035087459005881,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000087718648,
+        "inputAV": 0.0
+      },
+      "time": 4.2870002036216,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003551417263224701,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003551417263224701,
+        "outputTorque1": -7.8239735682057
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003551417263224701,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003551417263224701,
+        "outputTorque1": -7.8239735682057
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.004419075441546702,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880069648606,
+        "inputAV": 0.035087459005881
+      }
+    },
+    "55.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0034102583304048014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0034102583304048014,
+        "outputTorque1": 7.8229256270624
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0034102583304048014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0034102583304048014,
+        "outputTorque1": 7.8229256270624
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00015112923574634007,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0031887886580080015,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0032995234942064014,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0034102583304048014,
+        "outputTorque2": 7.8176608702519,
+        "outputTorque1": 7.8176608702519
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.00033906084718183014,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.026198216543999005,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000065495541,
+        "inputAV": 0.0
+      },
+      "time": 4.2975002041203,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0031887886580080015,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0031887886580080015,
+        "outputTorque1": 7.8225837221822
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0031887886580080015,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0031887886580080015,
+        "outputTorque1": 7.8225837221822
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0032995234942064014,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.88005200346,
+        "inputAV": -0.026198216543999005
+      }
+    },
+    "56.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0032325368374586006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0032325368374586006,
+        "outputTorque1": 7.8215169025557
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0032325368374586006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0032325368374586006,
+        "outputTorque1": 7.8215169025557
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0020657563582063007,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.002317725913599101,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0027751313755289006,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0032325368374586006,
+        "outputTorque2": 7.816526512186,
+        "outputTorque1": 7.816526512186
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0026267163921148006,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.022034543121699005,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000055086358,
+        "inputAV": 0.0
+      },
+      "time": 4.3185002051177,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002317725913599101,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002317725913599101,
+        "outputTorque1": 7.8201046174514
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002317725913599101,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002317725913599101,
+        "outputTorque1": 7.8201046174514
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0027751313755289006,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880043738568,
+        "inputAV": -0.022034543121699005
+      }
+    },
+    "57.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0044288253411651005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0044288253411651005,
+        "outputTorque1": -7.8253584937755996
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0044288253411651005,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0044288253411651005,
+        "outputTorque1": -7.8253584937755996
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00015635974705219006,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.0037104079965502006,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.004069616668857601,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0044288253411651005,
+        "outputTorque2": -7.8185212732139,
+        "outputTorque1": -7.8185212732139
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00019520867499523006,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.032312756350730006,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000080781891,
+        "inputAV": 0.0
+      },
+      "time": 4.3290002056165005,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0037104079965502006,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0037104079965502006,
+        "outputTorque1": -7.8242494010789
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0037104079965502006,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0037104079965502006,
+        "outputTorque1": -7.8242494010789
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.004069616668857601,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880064140821,
+        "inputAV": 0.032312756350730006
+      }
+    },
+    "58.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.002276781247928701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002276781247928701,
+        "outputTorque1": 7.8199085721476
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.002276781247928701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.002276781247928701,
+        "outputTorque1": 7.8199085721476
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0023125121369958,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0023629174102098006,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.002319849329069301,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.002276781247928701,
+        "outputTorque2": 7.816393677257,
+        "outputTorque1": 7.816393677257
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00039184562047012015,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.01841960367281,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000046049009,
+        "inputAV": 0.0
+      },
+      "time": 4.3395002061152,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0023629174102098006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0023629174102098006,
+        "outputTorque1": 7.8200415491549
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0023629174102098006,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0023629174102098006,
+        "outputTorque1": 7.8200415491549
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.002319849329069301,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880036562913,
+        "inputAV": -0.01841960367281
+      }
+    },
+    "59.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.004271066747605801,
+        "gearRatio": 1.0,
+        "outputAV1": 0.004271066747605801,
+        "outputTorque1": -7.8247983580527
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.004271066747605801,
+        "gearRatio": 1.0,
+        "outputAV1": 0.004271066747605801,
+        "outputTorque1": -7.8247983580527
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0010091717122123003,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003484328277409102,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0038776975125074014,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.004271066747605801,
+        "outputTorque2": -7.8182046852077995,
+        "outputTorque1": -7.8182046852077995
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0009031217778101602,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.030788918249309006,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000076972296,
+        "inputAV": 0.0
+      },
+      "time": 4.3500002066139,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003484328277409102,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003484328277409102,
+        "outputTorque1": -7.8235837912024
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003484328277409102,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003484328277409102,
+        "outputTorque1": -7.8235837912024
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0038776975125074014,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880061116003,
+        "inputAV": 0.030788918249309006
+      }
+    },
+    "60.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.0032570837065578014,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032570837065578014,
+        "outputTorque1": -7.8226298045717
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0032570837065578014,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0032570837065578014,
+        "outputTorque1": -7.8226298045717
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0014210221124813006,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003165858332067701,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.0032114710193127008,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.0032570837065578014,
+        "outputTorque2": -7.8176015187455,
+        "outputTorque1": -7.8176015187455
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0009092650143429602,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.025499079893343005,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.00000637477,
+        "inputAV": 0.0
+      },
+      "time": 4.3710002076114005,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003165858332067701,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003165858332067701,
+        "outputTorque1": -7.8224889708385
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003165858332067701,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003165858332067701,
+        "outputTorque1": -7.8224889708385
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.0032114710193127008,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.880050615674,
+        "inputAV": 0.025499079893343005
+      }
+    },
+    "61.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.003729666117578701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003729666117578701,
+        "outputTorque1": 7.8233160538506
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.003729666117578701,
+        "gearRatio": 1.0,
+        "outputAV1": -0.003729666117578701,
+        "outputTorque1": 7.8233160538506
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0016368383076042004,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0030571524985135014,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0033934093080461012,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.003729666117578701,
+        "outputTorque2": 7.8175581952983,
+        "outputTorque1": 7.8175581952983
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0008475551730953201,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.026943669905886,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000067359175,
+        "inputAV": 0.0
+      },
+      "time": 4.3815002081101,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0030571524985135014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030571524985135014,
+        "outputTorque1": 7.8222778273255
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0030571524985135014,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0030571524985135014,
+        "outputTorque1": 7.8222778273255
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0033934093080461012,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880053483185,
+        "inputAV": -0.026943669905886
+      }
+    },
+    "62.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": 0.003777303034439701,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003777303034439701,
+        "outputTorque1": -7.8238665953184
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003777303034439701,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003777303034439701,
+        "outputTorque1": -7.8238665953184
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0008981211576610801,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": 0.003427687799558001,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": 0.003602495416998901,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": 0.003777303034439701,
+        "outputTorque2": -7.8180351948938,
+        "outputTorque1": -7.8180351948938
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.00015991606051102007,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": 0.028603813610971,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": -2.0000071509534,
+        "inputAV": 0.0
+      },
+      "time": 4.3920002086088,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003427687799558001,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003427687799558001,
+        "outputTorque1": -7.8233268593188
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.003427687799558001,
+        "gearRatio": 1.0,
+        "outputAV1": 0.003427687799558001,
+        "outputTorque1": -7.8233268593188
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": 0.003602495416998901,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": -15.88005677857,
+        "inputAV": 0.028603813610971
+      }
+    },
+    "63.0": {
+      "wheelaxleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 2.0,
+        "inputAV": -0.0031492067500949,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0031492067500949,
+        "outputTorque1": 7.820834227392
+      },
+      "spindleFR": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFR",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0031492067500949,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0031492067500949,
+        "outputTorque1": 7.820834227392
+      },
+      "spindleRL": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0009338759118691101,
+        "outputTorque1": 0.0
+      },
+      "differential_F": {
+        "outputAV1": -0.0018917242996395007,
+        "parentOutputIndex": 1.0,
+        "gearRatio": 1.0,
+        "inputAV": -0.0025204655248672004,
+        "mode": "open",
+        "parentName": "torsionReactorF",
+        "outputAV2": -0.0031492067500949,
+        "outputTorque2": 7.8159724820112,
+        "outputTorque1": 7.8159724820112
+      },
+      "spindleRR": {
+        "isBroken": false,
+        "mode": "disconnected",
+        "parentOutputIndex": 1.0,
+        "inputAV": 0.0,
+        "gearRatio": 1.0,
+        "outputAV1": 0.0007267662440426601,
+        "outputTorque1": 0.0
+      },
+      "frontMotor": {
+        "isBroken": false,
+        "outputAV1": -0.020012496267445005,
+        "parentOutputIndex": 0.0,
+        "gearRatio": 1.0,
+        "outputTorque1": 2.0000050031241,
+        "inputAV": 0.0
+      },
+      "time": 4.4025002091075,
+      "wheelaxleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "differential_F",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0018917242996395007,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0018917242996395007,
+        "outputTorque1": 7.818892925985
+      },
+      "spindleFL": {
+        "isBroken": false,
+        "mode": "connected",
+        "parentName": "wheelaxleFL",
+        "parentOutputIndex": 1.0,
+        "inputAV": -0.0018917242996395007,
+        "gearRatio": 1.0,
+        "outputAV1": -0.0018917242996395007,
+        "outputTorque1": 7.818892925985
+      },
+      "torsionReactorF": {
+        "isBroken": false,
+        "outputAV1": -0.0025204655248672004,
+        "parentName": "frontMotor",
+        "parentOutputIndex": 1.0,
+        "gearRatio": 7.94,
+        "outputTorque1": 15.880039724805,
+        "inputAV": -0.020012496267445005
+      }
+    }
+  },
+  "lua_battery_data": null,
+  "battery_analysis": {
+    "timestamp": "2025-09-15T11:03:35.311403",
+    "data_sources_available": [
+      "electrics_sensor",
+      "powertrain_sensor"
+    ],
+    "battery_fields_found": [
+      "regenThrottle",
+      "regenFromOnePedal",
+      "regenFromBrake",
+      "maxRegenStrength",
+      "regenStrength",
+      "electricalLoadCoef"
+    ],
+    "motor_data_available": true,
+    "power_calculation_possible": true,
+    "degradation_testing_suitability": "excellent"
+  },
+  "electrics_battery_fields": {
+    "electricalLoadCoef": 1.0
+  }
+}

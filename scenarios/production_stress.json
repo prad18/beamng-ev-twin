@@ -1,0 +1,6 @@
+{
+  "name": "production_stress",
+  "map": "west_coast_usa",
+  "ambient_C": 45,
+  "notes": "Placeholder. Configure repeated hill climbs, sprints, minimal rest."
+}
