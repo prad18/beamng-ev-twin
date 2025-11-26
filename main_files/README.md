@@ -110,6 +110,7 @@ class BatteryState:
     capacity_ah = 220      # Amp-hours (LiFePO4)
     nominal_voltage = 370  # Volts
     energy_kwh = 81.4      # Total energy capacity
+    
 
     # Real-time State
     soc: float         # State of Charge (0-1)
