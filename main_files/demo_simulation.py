@@ -4,7 +4,9 @@
 This script connects to BeamNG and runs a live battery simulation
 with accelerated degradation for demo purposes.
 
-Run this alongside dashboard.py for the split-screen demo effect.
+Now integrated with PyBaMM electrochemical model for realistic physics!
+
+Run this alongside streamlit_dashboard.py for the split-screen demo effect.
 """
 
 import time
@@ -12,6 +14,7 @@ import json
 import math
 import os
 import yaml
+import requests
 from datetime import datetime
 from pathlib import Path
 
@@ -32,14 +35,67 @@ else:
     # Fallback to beamng_client config
     CFG = yaml.safe_load(open(Path(__file__).parent.parent / "beamng_client" / "config.yaml", 'r'))
 
+# PyBaMM API configuration
+_twin_url = CFG.get('twin_url', 'http://127.0.0.1:8008/step')
+# Extract base URL (remove /step if present)
+TWIN_API_URL = _twin_url.replace('/step', '').rstrip('/')
+
 # Shared data file for dashboard communication
 DATA_FILE = Path(__file__).parent / "live_data.json"
 
 
-class BatteryState:
-    """Battery state with realistic physics and accelerated degradation."""
+def check_pybamm_api():
+    """Check if PyBaMM API is available."""
+    try:
+        r = requests.get(f"{TWIN_API_URL}/", timeout=2.0)
+        if r.status_code == 200:
+            info = r.json()
+            return True, info.get('model', 'Unknown')
+        return False, None
+    except:
+        return False, None
+
+
+def call_pybamm_api(current_a, soc, temp_c, dt_s, accelerated_dt=None):
+    """Call PyBaMM API for battery simulation step.
     
-    def __init__(self, capacity_ah=220, voltage=370, demo_mode=True):
+    Args:
+        current_a: Pack current in Amperes
+        soc: State of charge (0-1)
+        temp_c: Temperature in Celsius
+        dt_s: Real timestep in seconds (for electrochemical model)
+        accelerated_dt: Accelerated timestep for degradation (optional)
+    """
+    try:
+        payload = {
+            "pack_current_A": float(current_a),
+            "soc": float(soc),
+            "amb_temp_C": float(temp_c),
+            "dt_s": float(dt_s)
+        }
+        # Add accelerated time for degradation if provided
+        if accelerated_dt is not None:
+            payload["accelerated_dt_s"] = float(accelerated_dt)
+            
+        r = requests.post(
+            f"{TWIN_API_URL}/step",
+            json=payload,
+            timeout=2.0
+        )
+        if r.status_code == 200:
+            return r.json()
+    except Exception as e:
+        pass
+    return None
+
+
+class BatteryState:
+    """Battery state with realistic physics and accelerated degradation.
+    
+    Can use PyBaMM API for electrochemical physics or fall back to internal model.
+    """
+    
+    def __init__(self, capacity_ah=220, voltage=370, demo_mode=True, use_pybamm=True):
         # Battery specifications
         self.capacity_ah = capacity_ah  # Amp-hours
         self.nominal_voltage = voltage  # Volts
@@ -66,12 +122,30 @@ class BatteryState:
         # Internal resistance (grows with degradation)
         self.internal_resistance = 0.05  # Ohms (new battery)
         
+        # PyBaMM integration
+        self.use_pybamm = use_pybamm
+        self.pybamm_available = False
+        self.model_type = "Internal"
+        
+        if use_pybamm:
+            available, model = check_pybamm_api()
+            if available:
+                self.pybamm_available = True
+                self.model_type = f"PyBaMM ({model})"
+                print(f"✅ Connected to PyBaMM API: {model}")
+            else:
+                print("⚠️ PyBaMM API not available, using internal model")
+                print("   Start the API with: cd twin_service && python api_pybamm.py")
+        
         # Tracking
         self.start_time = time.time()
         self.last_update = time.time()
         
     def update(self, motor_torque, motor_speed, dt, vehicle_speed_mps=0):
-        """Update battery state based on motor data."""
+        """Update battery state based on motor data.
+        
+        Uses PyBaMM API if available, otherwise falls back to internal model.
+        """
         now = time.time()
         real_dt = now - self.last_update
         self.last_update = now
@@ -93,25 +167,63 @@ class BatteryState:
         # Track energy throughput
         self.total_energy_throughput += abs(energy_delta)
         
-        # Update temperature (simplified thermal model)
-        heat_generated = (self.current ** 2) * self.internal_resistance * real_dt
-        cooling = 0.1 * (self.temperature - 25) * real_dt  # Passive cooling
-        self.temperature += (heat_generated * 0.01) - cooling
-        self.temperature = max(20, min(60, self.temperature))  # Clamp
-        
-        # Update voltage based on SOC and load
-        ocv = self.nominal_voltage * (0.9 + 0.2 * self.soc)  # Open circuit voltage
-        self.voltage = ocv - (self.current * self.internal_resistance)
-        
         # Track distance
         if vehicle_speed_mps > 0:
             self.total_distance_km += (vehicle_speed_mps * real_dt) / 1000
         
-        # === ACCELERATED DEGRADATION (for demo) ===
+        # === DEGRADATION CALCULATION ===
         if self.demo_mode:
             accelerated_dt = real_dt * self.time_multiplier
         else:
             accelerated_dt = real_dt
+        
+        # Try PyBaMM API first for electrochemical physics
+        # Note: PyBaMM can only handle short timesteps (< 120s), so we pass real_dt
+        # The time acceleration is applied to the degradation model, not the electrochemical solver
+        if self.pybamm_available:
+            pybamm_result = call_pybamm_api(
+                current_a=self.current,
+                soc=self.soc,
+                temp_c=self.temperature,
+                dt_s=min(real_dt, 60),  # PyBaMM needs short timesteps, max 60s
+                accelerated_dt=accelerated_dt  # Pass for degradation calculation
+            )
+            
+            if pybamm_result:
+                # Use PyBaMM results
+                self.soh = pybamm_result.get('soh', self.soh)
+                self.temperature = pybamm_result.get('pack_temp_C', self.temperature)
+                self.internal_resistance = pybamm_result.get('r_int_ohm', self.internal_resistance)
+                
+                if 'pack_voltage_V' in pybamm_result:
+                    self.voltage = pybamm_result['pack_voltage_V']
+                if 'cycle_count' in pybamm_result:
+                    self.cycle_count = pybamm_result['cycle_count']
+            else:
+                # Fall back to internal model if API call failed
+                self._internal_degradation(real_dt, accelerated_dt, c_rate)
+        else:
+            # Use internal model
+            self._internal_degradation(real_dt, accelerated_dt, c_rate)
+        
+        # Track simulated time
+        self.simulated_days += accelerated_dt / 86400  # Convert to days
+        
+        # Track cycles (rough estimate if not from PyBaMM)
+        if not self.pybamm_available:
+            self.cycle_count = self.total_energy_throughput / (2 * self.energy_kwh)
+    
+    def _internal_degradation(self, real_dt, accelerated_dt, c_rate):
+        """Internal degradation model (fallback when PyBaMM not available)."""
+        # Update temperature (simplified thermal model)
+        heat_generated = (self.current ** 2) * self.internal_resistance * real_dt
+        cooling = 0.1 * (self.temperature - 25) * real_dt
+        self.temperature += (heat_generated * 0.01) - cooling
+        self.temperature = max(20, min(60, self.temperature))
+        
+        # Update voltage based on SOC and load
+        ocv = self.nominal_voltage * (0.9 + 0.2 * self.soc)
+        self.voltage = ocv - (self.current * self.internal_resistance)
         
         # Cycle degradation (based on power usage)
         cycle_stress = c_rate ** 1.5 if c_rate > 0 else 0
@@ -131,12 +243,6 @@ class BatteryState:
         
         # Update internal resistance (grows as battery degrades)
         self.internal_resistance = 0.05 / (self.soh ** 2)
-        
-        # Track simulated time
-        self.simulated_days += accelerated_dt / 86400  # Convert to days
-        
-        # Track cycles (rough estimate: 1 cycle = 2 * capacity discharged)
-        self.cycle_count = self.total_energy_throughput / (2 * self.energy_kwh)
         
     def get_state_dict(self):
         """Return current state as dictionary for dashboard."""
@@ -165,7 +271,11 @@ class BatteryState:
             "is_charging": self.power_kw < 0,
             "is_regen": self.power_kw < -1,
             "demo_mode": self.demo_mode,
-            "time_multiplier": self.time_multiplier
+            "time_multiplier": self.time_multiplier,
+            
+            # Model info
+            "model_type": self.model_type,
+            "pybamm_connected": self.pybamm_available
         }
 
 
@@ -282,7 +392,8 @@ class LiveDemoSimulation:
         print("="*60)
         print(f"🚗 Vehicle: {self.vehicle_model}")
         print(f"⚡ Demo Mode: {'ON (10,000x acceleration)' if self.demo_mode else 'OFF (realistic)'}")
-        print(f"📊 Dashboard: Run dashboard.py in another terminal")
+        print(f"🔬 Battery Model: {self.battery.model_type}")
+        print(f"📊 Dashboard: Run streamlit_dashboard.py in another terminal")
         print("="*60)
         print("\n🎮 DRIVE THE CAR IN BEAMNG!")
         print("   Use arrow keys or WASD in the BeamNG window")

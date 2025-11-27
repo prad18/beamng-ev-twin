@@ -336,8 +336,9 @@ def main():
     elapsed = data.get('elapsed_seconds', 0)
     running = data.get('simulation_running', False)
     demo_mode = data.get('demo_mode', False)
-    vehicle = data.get('vehicle_model', 'Unknown')
+    vehicle = data.get('vehicle_model', 'sv1ev3')
     is_regen = data.get('is_regen', False)
+    stress_test = data.get('stress_test', False)
     
     # Update history (limit to 500 points)
     if len(st.session_state.time_history) == 0 or \
@@ -369,6 +370,43 @@ def main():
     with status_col4:
         soh_status, soh_emoji, soh_color = get_soh_status(soh)
         st.markdown(f"### {soh_emoji} Health: **{soh_status}**")
+    
+    # Stress test progress bar (if running stress test)
+    stress_test = data.get('stress_test', False)
+    if stress_test:
+        progress_pct = data.get('progress_percent', 0)
+        remaining_sec = data.get('remaining_seconds', 0)
+        driver_pattern = data.get('driver_pattern', 'unknown')
+        
+        st.markdown("---")
+        st.markdown("### 🏁 STRESS TEST IN PROGRESS")
+        
+        test_col1, test_col2, test_col3 = st.columns(3)
+        with test_col1:
+            st.progress(progress_pct / 100)
+            st.caption(f"Progress: {progress_pct:.1f}%")
+        with test_col2:
+            st.metric("⏱️ Time Remaining", f"{remaining_sec/60:.1f} min")
+        with test_col3:
+            pattern_icons = {
+                "launch_control": "🚀 Launch Control",
+                "brake_slam": "🛑 Hard Braking",
+                "throttle_spam": "⚡ Throttle Spam",
+                "hill_climb": "⛰️ Hill Climb",
+                "regen_abuse": "🔋 Regen Abuse",
+                "burnout": "🔥 Burnout",
+                "highway_sprint": "🏎️ Highway Sprint"
+            }
+            st.metric("🎮 Driving Pattern", pattern_icons.get(driver_pattern, driver_pattern))
+    
+    # PyBaMM Model Info
+    pybamm_connected = data.get('pybamm_connected', False)
+    model_type = data.get('model_type', 'Unknown')
+    
+    if pybamm_connected:
+        st.success(f"🔬 **PyBaMM Electrochemical Model Active**: {model_type}")
+    else:
+        st.warning("⚠️ Using simplified physics model (PyBaMM not connected)")
     
     st.markdown("---")
     
@@ -469,6 +507,26 @@ def main():
     with stat_col4:
         current_direction = "↓ Discharge" if current > 0 else "↑ Charge" if current < 0 else "Idle"
         st.metric("🔌 Current", f"{abs(current):.1f} A {current_direction}")
+    
+    # Stress test additional metrics
+    if stress_test:
+        st.markdown("---")
+        st.subheader("📊 Stress Test Metrics")
+        
+        peak_col1, peak_col2, peak_col3, peak_col4 = st.columns(4)
+        
+        with peak_col1:
+            peak_power = data.get('peak_power_kw', 0)
+            st.metric("⚡ Peak Power", f"{peak_power:.1f} kW")
+        with peak_col2:
+            peak_current = data.get('peak_current_a', 0)
+            st.metric("🔌 Peak Current", f"{peak_current:.1f} A")
+        with peak_col3:
+            energy_throughput = data.get('energy_throughput_kwh', 0)
+            st.metric("🔋 Energy Throughput", f"{energy_throughput:.1f} kWh")
+        with peak_col4:
+            sim_years = data.get('simulated_years', 0)
+            st.metric("📅 Simulated Years", f"{sim_years:.2f}")
     
     # Regen indicator
     if is_regen:

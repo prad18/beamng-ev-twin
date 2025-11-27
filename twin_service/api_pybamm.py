@@ -47,6 +47,7 @@ class BatteryRequest(BaseModel):
     soc: float
     amb_temp_C: float
     dt_s: float
+    accelerated_dt_s: Optional[float] = None  # For accelerated degradation
 
 
 class BatteryResponse(BaseModel):
@@ -107,13 +108,17 @@ async def battery_step(request: BatteryRequest):
     """
     
     try:
+        # Use accelerated dt for degradation if provided, otherwise use real dt
+        degradation_dt = request.accelerated_dt_s if request.accelerated_dt_s else request.dt_s
+        
         if PYBAMM_AVAILABLE:
-            # Use PyBaMM model
+            # Use PyBaMM model with separate real and accelerated timesteps
             result = battery_model.step(
                 current_a=request.pack_current_A,
                 soc=request.soc,
                 ambient_temp_c=request.amb_temp_C,
-                dt_s=request.dt_s
+                dt_s=request.dt_s,  # Real timestep for electrochemistry
+                degradation_dt_s=degradation_dt  # Accelerated timestep for aging
             )
             
             return BatteryResponse(

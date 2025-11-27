@@ -96,7 +96,8 @@ class PyBaMMBatteryTwin:
         current_a: float,
         soc: float,
         ambient_temp_c: float,
-        dt_s: float
+        dt_s: float,
+        degradation_dt_s: float = None
     ) -> Dict:
         """
         Simulate one timestep with PyBaMM.
@@ -105,68 +106,110 @@ class PyBaMMBatteryTwin:
             current_a: Pack current in Amperes (positive=discharge, negative=charge)
             soc: Current state of charge (0-1)
             ambient_temp_c: Ambient temperature in Celsius
-            dt_s: Timestep duration in seconds
+            dt_s: Real timestep duration in seconds (for electrochemical model)
+            degradation_dt_s: Accelerated timestep for degradation (optional, for demo mode)
         
         Returns:
             Dictionary with battery state (soh, voltage, temp, resistance, etc.)
         """
         
+        # Use degradation_dt for aging calculations if provided
+        aging_dt = degradation_dt_s if degradation_dt_s is not None else dt_s
+        
         # Update time tracking
         self.time_elapsed_s += dt_s
         
-        # Create experiment for this timestep
-        # PyBaMM uses positive current for discharge
-        current_sign = current_a  # Already correct sign from simulation
+        # Clamp SOC to valid range for PyBaMM (avoid edge cases)
+        soc_clamped = np.clip(soc, 0.05, 0.95)
         
-        # Limit extreme currents to prevent solver issues
-        current_limited = np.clip(current_sign, -400, 400)  # Max 400A charge/discharge
+        # Check if operation is feasible before calling PyBaMM
+        # Prevent discharge at very low SOC or charge at very high SOC
+        use_fallback = False
+        fallback_reason = None
         
-        # Create current profile for this timestep
-        if abs(current_limited) < 0.1:
-            # Rest step
-            experiment = pybamm.Experiment([
-                f"Rest for {dt_s} seconds"
-            ])
-        elif current_limited > 0:
-            # Discharge
-            experiment = pybamm.Experiment([
-                f"Discharge at {abs(current_limited)}A for {dt_s} seconds or until 2.5V"
-            ])
-        else:
-            # Charge
-            experiment = pybamm.Experiment([
-                f"Charge at {abs(current_limited)}A for {dt_s} seconds or until 4.2V"
-            ])
+        current_sign = current_a
+        current_limited = np.clip(current_sign, -400, 400)
         
-        try:
-            # Simulate with experiment
-            sim = pybamm.Simulation(
-                self.model,
-                parameter_values=self.parameter_sets,
-                experiment=experiment
-            )
+        if current_limited > 0 and soc_clamped < 0.08:
+            # Can't discharge an empty battery
+            use_fallback = True
+            fallback_reason = "low_soc_discharge"
+        elif current_limited < 0 and soc_clamped > 0.92:
+            # Can't charge a full battery
+            use_fallback = True
+            fallback_reason = "high_soc_charge"
+        elif abs(current_limited) > 300 and (soc_clamped < 0.15 or soc_clamped > 0.85):
+            # High current at edge SOCs is problematic for solver
+            use_fallback = True
+            fallback_reason = "edge_soc_high_current"
+        
+        if not use_fallback:
+            # Create current profile for this timestep
+            if abs(current_limited) < 0.1:
+                # Rest step - use shorter time to avoid solver issues
+                experiment = pybamm.Experiment([
+                    f"Rest for {min(dt_s, 300)} seconds"
+                ])
+            elif current_limited > 0:
+                # Discharge - limit step size for stability
+                experiment = pybamm.Experiment([
+                    f"Discharge at {abs(current_limited)}A for {min(dt_s, 120)} seconds or until 2.5V"
+                ])
+            else:
+                # Charge - limit step size for stability
+                experiment = pybamm.Experiment([
+                    f"Charge at {abs(current_limited)}A for {min(dt_s, 120)} seconds or until 4.2V"
+                ])
             
-            # Run simulation
-            solution = sim.solve(initial_soc=soc)
-            self.current_solution = solution
-            
-            # Extract results
-            voltage = solution["Terminal voltage [V]"].entries[-1]
-            temperature = solution["Volume-averaged cell temperature [K]"].entries[-1] - 273.15
-            
-            # Update state
-            self.pack_temp_c = temperature
-            self.last_voltage = voltage * 100  # Scale to pack voltage (~370V for 100S)
-            
-        except Exception as e:
-            # Fallback to simple model if PyBaMM fails
-            print(f"⚠️ PyBaMM solver failed: {e}")
+            try:
+                # Simulate with experiment
+                sim = pybamm.Simulation(
+                    self.model,
+                    parameter_values=self.parameter_sets,
+                    experiment=experiment
+                )
+                
+                # Run simulation with skip_ok to handle infeasible steps gracefully
+                solution = sim.solve(initial_soc=soc_clamped)
+                
+                # Check if solution is valid (not empty)
+                if solution is None or not hasattr(solution, '__getitem__'):
+                    use_fallback = True
+                    fallback_reason = "empty_solution"
+                else:
+                    try:
+                        voltage_data = solution["Terminal voltage [V]"]
+                        if voltage_data is None or len(voltage_data.entries) == 0:
+                            use_fallback = True
+                            fallback_reason = "no_voltage_data"
+                        else:
+                            voltage = voltage_data.entries[-1]
+                            temp_data = solution["Volume-averaged cell temperature [K]"]
+                            if temp_data is not None and len(temp_data.entries) > 0:
+                                temperature = temp_data.entries[-1] - 273.15
+                            else:
+                                temperature = self._estimate_temperature(current_a, ambient_temp_c, dt_s)
+                            
+                            self.current_solution = solution
+                            self.pack_temp_c = temperature
+                            self.last_voltage = voltage * 100  # Scale to pack voltage
+                    except (TypeError, IndexError, KeyError) as e:
+                        use_fallback = True
+                        fallback_reason = f"solution_access_error"
+                        
+            except Exception as e:
+                use_fallback = True
+                fallback_reason = f"solver_exception"
+        
+        # Use fallback model if PyBaMM couldn't solve
+        if use_fallback:
             voltage = self._estimate_voltage(soc)
             temperature = self._estimate_temperature(current_a, ambient_temp_c, dt_s)
             self.pack_temp_c = temperature
+            self.last_voltage = voltage * 100
         
-        # Update degradation
-        self._update_degradation(current_a, soc, temperature, dt_s)
+        # Update degradation with accelerated time (for demo mode)
+        self._update_degradation(current_a, soc, temperature, aging_dt)
         
         # Calculate internal resistance (increases with degradation)
         r_internal = self._calculate_resistance()

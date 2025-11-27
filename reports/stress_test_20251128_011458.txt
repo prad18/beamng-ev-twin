@@ -1,0 +1,48 @@
+
+================================================================================
+              EV BATTERY STRESS TEST REPORT
+================================================================================
+
+Generated: 2025-11-28 01:14:58
+
+SIMULATION SUMMARY
+------------------
+  Real Duration:       0.2 minutes
+  Simulated Time:      0.0 days (0.00 years)
+  Time Acceleration:   10,000x
+
+BATTERY RESULTS
+---------------
+  Starting SOH:        100.0%
+  Final SOH:           100.00%
+  Degradation:         0.000%
+  Equivalent Cycles:   0.0
+  
+  Original Capacity:   81.4 kWh
+  Remaining Capacity:  81.4 kWh
+  Capacity Lost:       0.00 kWh
+
+STRESS METRICS
+--------------
+  Distance Driven:     0.0 km
+  Energy Used:         0.0 kWh
+  Peak Power:          0.0 kW
+  Peak Current:        0.0 A
+  Max Temperature:     25.0 C
+  Min SOC Reached:     100.0%
+
+MODEL INFO
+----------
+  Physics Model:       PyBaMM
+  Simulation Steps:    0
+  Battery Chemistry:   LiFePO4 (LFP)
+  Battery Pack:        81.4 kWh / 370V
+
+HISTORY
+-------
+  Time(min) | Sim Days | SOC%  | SOH%   | Temp C | Power kW
+  -------------------------------------------------------
+
+================================================================================
+                         END OF REPORT
+================================================================================
