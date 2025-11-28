@@ -255,10 +255,4 @@ This project is for academic/research purposes. BeamNG.tech requires a valid lic
 
 ---
 
-## 👥 Team
-
-Developed as part of EV battery research project.
-
-**Contact:** [Your Email]
-
  
