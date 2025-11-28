@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-11-28T09:35:35.616501",
+  "duration_minutes": 0.4181335171063741,
+  "simulated_days": 0.0,
+  "start_soh": 1.0,
+  "final_soh": 1.0,
+  "soh_loss_percent": 0.0,
+  "peak_power_kw": 0,
+  "peak_current_a": 0,
+  "max_temp_c": 25,
+  "history": [
+    {
+      "t": 24.53556227684021,
+      "days": 0.0,
+      "soc": 0.8,
+      "soh": 1.0,
+      "temp": 25.0,
+      "power": 0.0
+    }
+  ]
+}

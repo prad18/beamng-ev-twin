@@ -3,12 +3,12 @@
               EV BATTERY STRESS TEST REPORT
 ================================================================================
 
-Generated: 2025-11-28 01:14:58
+Generated: 2025-11-28 09:41:12
 
 SIMULATION SUMMARY
 ------------------
-  Real Duration:       0.2 minutes
-  Simulated Time:      0.0 days (0.00 years)
+  Real Duration:       5.3 minutes
+  Simulated Time:      34.6 days (0.09 years)
   Time Acceleration:   10,000x
 
 BATTERY RESULTS
@@ -16,7 +16,7 @@ BATTERY RESULTS
   Starting SOH:        100.0%
   Final SOH:           100.00%
   Degradation:         0.000%
-  Equivalent Cycles:   0.0
+  Equivalent Cycles:   151.7
   
   Original Capacity:   81.4 kWh
   Remaining Capacity:  81.4 kWh
@@ -24,17 +24,17 @@ BATTERY RESULTS
 
 STRESS METRICS
 --------------
-  Distance Driven:     0.0 km
-  Energy Used:         0.0 kWh
-  Peak Power:          0.0 kW
-  Peak Current:        0.0 A
-  Max Temperature:     25.0 C
-  Min SOC Reached:     100.0%
+  Distance Driven:     5.9 km
+  Energy Used:         2.1 kWh
+  Peak Power:          95.8 kW
+  Peak Current:        294.8 A
+  Max Temperature:     28.9 C
+  Min SOC Reached:     77.4%
 
 MODEL INFO
 ----------
   Physics Model:       PyBaMM
-  Simulation Steps:    0
+  Simulation Steps:    461
   Battery Chemistry:   LiFePO4 (LFP)
   Battery Pack:        81.4 kWh / 370V
 
@@ -42,6 +42,16 @@ HISTORY
 -------
   Time(min) | Sim Days | SOC%  | SOH%   | Temp C | Power kW
   -------------------------------------------------------
+       0.4 |      0.0 |  80.0 | 100.00 |   25.0 |      0.0
+       0.9 |      3.5 |  79.9 | 100.00 |   25.0 |      8.0
+       1.4 |      7.0 |  79.9 | 100.00 |   25.0 |      1.6
+       1.9 |     10.5 |  79.6 | 100.00 |   25.5 |     75.0
+       2.4 |     14.1 |  78.9 | 100.00 |   26.8 |     76.3
+       2.9 |     17.6 |  78.2 | 100.00 |   28.0 |     61.0
+       3.4 |     21.0 |  77.7 | 100.00 |   25.0 |     13.0
+       3.9 |     24.5 |  77.6 | 100.00 |   25.0 |     18.4
+       4.4 |     28.0 |  77.5 | 100.00 |   25.0 |     12.3
+       4.9 |     31.6 |  77.4 | 100.00 |   25.0 |      5.3
 
 ================================================================================
                          END OF REPORT
